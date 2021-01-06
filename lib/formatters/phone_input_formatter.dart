@@ -38,6 +38,8 @@ class PhoneInputFormatter extends TextInputFormatter {
 
   PhoneCountryData _countryData;
 
+  static List<Map<String, dynamic>> get allCountryData => _PhoneCodes.data;
+
   /// [onCountrySelected] when you enter a phone
   /// and a country is detected
   /// this callback gets called
@@ -99,8 +101,11 @@ class PhoneInputFormatter extends TextInputFormatter {
       return oldValue;
     }
 
+    maskedValue = maskedValue.replaceFirst("+", "");
+
     var endOffset = max(oldValue.text.length - oldValue.selection.end, 0);
     var selectionEnd = maskedValue.length - endOffset;
+
     return TextEditingValue(
       selection: TextSelection.collapsed(
         offset: selectionEnd,
@@ -212,7 +217,7 @@ class PhoneInputFormatter extends TextInputFormatter {
   ) {
     assert(countryCode != null && countryCode.length == 2);
     countryCode = countryCode.toUpperCase();
-    var countryData = _PhoneCodes._data.firstWhere(
+    var countryData = _PhoneCodes.data.firstWhere(
       (m) => m['countryCode'] == countryCode,
       orElse: () => null,
     );
@@ -391,6 +396,10 @@ class PhoneCountryData {
     this.altMasks,
   });
 
+  factory PhoneCountryData.fromCountryCode(String countryCode) {
+    return _PhoneCodes.getCountryDataByCountryCode(countryCode);
+  }
+
   String countryCodeToString() {
     return '+$phoneCode';
   }
@@ -404,6 +413,7 @@ class PhoneCountryData {
       altMasks: value['altMasks'],
     );
   }
+
   @override
   String toString() {
     return '[PhoneCountryData(country: $country,' +
@@ -425,8 +435,8 @@ class _PhoneCodes {
     if (subscringLength < 1) return null;
     var phoneCode = phone.substring(0, subscringLength);
 
-    var rawData = _data.firstWhere(
-        (data) => toNumericString(data['phoneCode']) == phoneCode,
+    var rawData = data.firstWhere(
+        (element) => toNumericString(element['phoneCode']) == phoneCode,
         orElse: () => null);
     if (rawData != null) {
       return PhoneCountryData.fromMap(rawData);
@@ -434,20 +444,32 @@ class _PhoneCodes {
     return getCountryDataByPhone(phone, subscringLength: subscringLength - 1);
   }
 
+  static PhoneCountryData getCountryDataByCountryCode(String countryCode) {
+    var result = data.firstWhere(
+      (element) => element["countryCode"] == countryCode,
+      orElse: () => null,
+    );
+
+    if (result != null) return PhoneCountryData.fromMap(result);
+
+    throw new Exception(
+        "A country data could not be found with the supplied country code");
+  }
+
   static List<PhoneCountryData> getAllCountryDatasByPhoneCode(
     String phoneCode,
   ) {
     var list = <PhoneCountryData>[];
-    _data.forEach((data) {
-      var c = toNumericString(data['phoneCode']);
+    data.forEach((element) {
+      var c = toNumericString(element['phoneCode']);
       if (c == phoneCode) {
-        list.add(PhoneCountryData.fromMap(data));
+        list.add(PhoneCountryData.fromMap(element));
       }
     });
     return list;
   }
 
-  static List<Map<String, dynamic>> _data = <Map<String, dynamic>>[
+  static List<Map<String, dynamic>> data = <Map<String, dynamic>>[
     {
       'country': 'Afghanistan',
       'phoneCode': '93',
@@ -650,12 +672,6 @@ class _PhoneCodes {
       'phoneMask': '+000 0 000 0000',
     },
     {
-      'country': 'United States',
-      'phoneCode': '1',
-      'countryCode': 'US',
-      'phoneMask': '+0 (000) 000 0000',
-    },
-    {
       'country': 'Canada',
       'phoneCode': '1',
       'countryCode': 'CA',
@@ -669,7 +685,7 @@ class _PhoneCodes {
     },
     {
       'country': 'Cayman Islands',
-      'phoneCode': ' 345',
+      'phoneCode': '1345',
       'countryCode': 'KY',
       'phoneMask': '+0 (000) 000 0000',
     },
@@ -1589,6 +1605,12 @@ class _PhoneCodes {
       'phoneCode': '44',
       'countryCode': 'GB',
       'phoneMask': '+00 0000 000000',
+    },
+    {
+      'country': 'United States',
+      'phoneCode': '1',
+      'countryCode': 'US',
+      'phoneMask': '+0 (000) 000 0000',
     },
     {
       'country': 'Uruguay',
