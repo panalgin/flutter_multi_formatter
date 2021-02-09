@@ -1598,7 +1598,7 @@ class _PhoneCodes {
       'country': 'United Arab Emirates',
       'phoneCode': '971',
       'countryCode': 'AE',
-      'phoneMask': '+000 0 0000000',
+      'phoneMask': '+000 00 0000000',
     },
     {
       'country': 'United Kingdom',
