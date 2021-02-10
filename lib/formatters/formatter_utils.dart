@@ -29,7 +29,6 @@ final RegExp _digitWithPeriodRegex = RegExp(r'[-0-9]+(\.[0-9]+)?');
 final RegExp _oneDashRegExp = RegExp(r'[-]{2,}');
 final RegExp _startPlusRegExp = RegExp(r'^\+{1}[)(\d]+');
 final RegExp _maskContentsRegexp = RegExp(r'^[-0-9)( +]{3,}$');
-final RegExp _isNotDigit = RegExp(r'^[-\+ )(]+$');
 
 String toNumericString(
   String inputString, {
@@ -45,14 +44,14 @@ String toNumericString(
 
 void checkMask(String mask) {
   if (_oneDashRegExp.hasMatch(mask)) {
-    throw('A mask cannot contain more than one dash (-) symbols in a row');
+    throw ('A mask cannot contain more than one dash (-) symbols in a row');
     // return false;
   }
   if (!_startPlusRegExp.hasMatch(mask)) {
-    throw('A mask must start with a + sign followed by a digit of a rounded brace');
+    throw ('A mask must start with a + sign followed by a digit of a rounded brace');
   }
   if (!_maskContentsRegexp.hasMatch(mask)) {
-    throw('A mask can only contain digits, a plus sign, spaces and dashes');
+    throw ('A mask can only contain digits, a plus sign, spaces and dashes');
   }
 }
 
