@@ -564,7 +564,7 @@ class _PhoneCodes {
       "country": "Bahrain",
       "phoneCode": "973",
       "countryCode": "BH",
-      "phoneMask": "+000 000 000 0000"
+      "phoneMask": "+000 0000 0000"
     },
     {
       "country": "Bangladesh",
