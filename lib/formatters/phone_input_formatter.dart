@@ -1046,7 +1046,8 @@ class _PhoneCodes {
       "country": "Indonesia",
       "phoneCode": "62",
       "countryCode": "ID",
-      "phoneMask": "+00 00 0000 0000"
+      "phoneMask": "+00 000-0000-000",
+      "altMasks": ["+00 000-0000-0000"]
     },
     {
       "country": "Iran, Islamic Republic of",
