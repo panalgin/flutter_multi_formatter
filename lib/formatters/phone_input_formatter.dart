@@ -492,7 +492,7 @@ class _PhoneCodes {
       "country": "American Samoa",
       "phoneCode": "1684",
       "countryCode": "AS",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Andorra",
@@ -510,13 +510,13 @@ class _PhoneCodes {
       "country": "Anguilla",
       "phoneCode": "1264",
       "countryCode": "AI",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Antigua and Barbuda",
       "phoneCode": "1268",
       "countryCode": "AG",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Argentina",
@@ -558,7 +558,7 @@ class _PhoneCodes {
       "country": "Bahamas",
       "phoneCode": "1242",
       "countryCode": "BS",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Bahrain",
@@ -576,7 +576,7 @@ class _PhoneCodes {
       "country": "Barbados",
       "phoneCode": "1246",
       "countryCode": "BB",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Belarus",
@@ -606,7 +606,7 @@ class _PhoneCodes {
       "country": "Bermuda",
       "phoneCode": "1441",
       "countryCode": "BM",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Bhutan",
@@ -636,8 +636,8 @@ class _PhoneCodes {
       "country": "Brazil",
       "phoneCode": "55",
       "countryCode": "BR",
-      "phoneMask": "+00 (00) 0000-0000",
-      "altMasks": ["+00 (00) 00000-0000"]
+      "phoneMask": "+00 00 0000-0000",
+      "altMasks": ["+00 00 00000-0000"]
     },
     {
       "country": "British Indian Ocean Territory",
@@ -685,7 +685,7 @@ class _PhoneCodes {
       "country": "Canada",
       "phoneCode": "1",
       "countryCode": "CA",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Cape Verde",
@@ -697,7 +697,7 @@ class _PhoneCodes {
       "country": "Cayman Islands",
       "phoneCode": "1345",
       "countryCode": "KY",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Central African Republic",
@@ -962,7 +962,7 @@ class _PhoneCodes {
       "country": "Grenada",
       "phoneCode": "1473",
       "countryCode": "GD",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Guadeloupe",
@@ -974,7 +974,7 @@ class _PhoneCodes {
       "country": "Guam",
       "phoneCode": "1671",
       "countryCode": "GU",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Guatemala",
@@ -986,7 +986,7 @@ class _PhoneCodes {
       "country": "Guernsey",
       "phoneCode": "44",
       "countryCode": "GG",
-      "phoneMask": "+00 (0) 0000 000000"
+      "phoneMask": "+00 0 0000 000000"
     },
     {
       "country": "Guinea",
@@ -1077,13 +1077,13 @@ class _PhoneCodes {
       "country": "Italy",
       "phoneCode": "39",
       "countryCode": "IT",
-      "phoneMask": "+00 00 000 0000"
+      "phoneMask": "+00 000 000 0000"
     },
     {
       "country": "Jamaica",
       "phoneCode": "1876",
       "countryCode": "JM",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Japan",
@@ -1101,7 +1101,7 @@ class _PhoneCodes {
       "country": "Kazakhstan",
       "phoneCode": "77",
       "countryCode": "KZ",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Kenya",
@@ -1227,7 +1227,7 @@ class _PhoneCodes {
       "country": "Malaysia",
       "phoneCode": "60",
       "countryCode": "MY",
-      "phoneMask": "+00 0 000 0000"
+      "phoneMask": "+00 00-000 0000"
     },
     {
       "country": "Maldives",
@@ -1317,7 +1317,7 @@ class _PhoneCodes {
       "country": "Montserrat",
       "phoneCode": "1664",
       "countryCode": "MS",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Morocco",
@@ -1413,7 +1413,7 @@ class _PhoneCodes {
       "country": "Northern Mariana Islands",
       "phoneCode": "1670",
       "countryCode": "MP",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Norway",
@@ -1515,7 +1515,7 @@ class _PhoneCodes {
       "country": "Russia",
       "phoneCode": "7",
       "countryCode": "RU",
-      "phoneMask": "+0 (000) 000-00-00"
+      "phoneMask": "+0 000 000-00-00"
     },
     {
       "country": "Rwanda",
@@ -1545,13 +1545,13 @@ class _PhoneCodes {
       "country": "Saint Kitts and Nevis",
       "phoneCode": "1869",
       "countryCode": "KN",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Saint Lucia",
       "phoneCode": "1758",
       "countryCode": "LC",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Saint Martin",
@@ -1563,13 +1563,13 @@ class _PhoneCodes {
       "country": "Saint Pierre and Miquelon",
       "phoneCode": "508",
       "countryCode": "PM",
-      "phoneMask": "(508) 00 00 00"
+      "phoneMask": "508 00 00 00"
     },
     {
       "country": "Saint Vincent and the Grenadines",
       "phoneCode": "1784",
       "countryCode": "VC",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Samoa",
@@ -1767,7 +1767,7 @@ class _PhoneCodes {
       "country": "Trinidad and Tobago",
       "phoneCode": "1868",
       "countryCode": "TT",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Tunisia",
@@ -1791,7 +1791,7 @@ class _PhoneCodes {
       "country": "Turks and Caicos Islands",
       "phoneCode": "1649",
       "countryCode": "TC",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Tuvalu",
@@ -1827,7 +1827,7 @@ class _PhoneCodes {
       "country": "United States",
       "phoneCode": "1",
       "countryCode": "US",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Uruguay",
@@ -1863,13 +1863,13 @@ class _PhoneCodes {
       "country": "Virgin Islands, British",
       "phoneCode": "1284",
       "countryCode": "VG",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Virgin Islands, U.S.",
       "phoneCode": "1340",
       "countryCode": "VI",
-      "phoneMask": "+0 (000) 000 0000"
+      "phoneMask": "+0 000 000 0000"
     },
     {
       "country": "Wallis and Futuna",
